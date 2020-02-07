@@ -33,7 +33,7 @@ $thankYou="Your message has been sent.";
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"></a>
+      <a id="logo-container" href="#" class="brand-logo">Materialize 101</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#one">One Link</a></li>
         <li><a href="#two">Two Link</a></li>
@@ -64,7 +64,7 @@ $thankYou="Your message has been sent.";
 
       </div>
     </div>
-    <div class="parallax"><img src="background1.jpg" alt="Winery"></div>
+    <div class="parallax"><img src="nerd.jpg" alt="80s Nerd"></div>
   </div>
   <div class="container">
       <div class="row">
@@ -72,7 +72,7 @@ $thankYou="Your message has been sent.";
           <div class="icon-block">
             <h2 class="center pink-text text-darken-3"><i class="material-icons">code</i></h2>
             <h5 class="center pink-text text-darken-3">Why Terminal</h5>
-            <p>Deep knowledge and understanding of wine industry business dynamics, barriers, and opportunities. Experience in financial management and leadership positions, focusing financial information to help make better operating decisions.</p>
+            <p>Deep knowledge and understanding of the system will come from using this. It's super user level ish yo!</p>
           </div>
         </div>
 
@@ -80,7 +80,7 @@ $thankYou="Your message has been sent.";
           <div class="icon-block">
             <h2 class="center indigo-text text-darken-3"><i class="material-icons">open_in_browser</i></h2>
             <h5 class="center indigo-text text-darken-3">Github</h5>
-            <p>Proven success in both contracted engagements as well as longer term roles with clients, with an ability to quickly identify those barriers and opportunities, as well as the solutions and plans to address them.</p>
+            <p>GitHub tools to improve your workflow. Set up a repo to improve the way you store your projects.</p>
           </div>
         </div>
 
@@ -88,7 +88,7 @@ $thankYou="Your message has been sent.";
           <div class="icon-block">
             <h2 class="center teal-text text-darken-2"><i class="material-icons">palette</i></h2>
             <h5 class="center teal-text text-darken-2">Materialize</h5>
-            <p>Demonstrated results in setting and achieving objective client metrics, with the strongest commitment possible to client success.</p>
+            <p>Utilize a rad framework that will speed up your development time.</p>
           </div>
         </div>
       </div>
@@ -111,10 +111,11 @@ $thankYou="Your message has been sent.";
           <b>mkdir</b> creates a new directory<br>
           <b>cd</b> changes the directory so you can move around the computer<br>
           <b>mv</b> is for moving a file around<br>
-          <b>rm</b> deletes </p>
+          <b>rm</b> deletes <br>
+          <b>ctrl + c</b> exits the process</p>
         </div>
         <div class="col s12">
-          <p>So now we wanna move up to the Applications folder. 
+          <p>So now we wanna move up to the Applications(there are two so make sure you go up two folders) folder. 
           Type in <code>cd ..</code> and hit enter(push enter to execute the commands) to move jump up a folder.
           Type in <code>ls</code> it should list </p>
           <code>Applications   <br>
@@ -124,13 +125,31 @@ $thankYou="Your message has been sent.";
           Downloads
           </code>
         </div>
-      
+        <div class="col s12">
+          <p>type <code>cd ..</code> again to go up to the location you want to put your project. 
+          </p>
+          <p>
+          It's gonna need to go into the spot with your local host projects. If you need to get a local server on your laptop so download and install this one. <a href="https://www.mamp.info/en/downloads/" target="_blank">MAMP</a> Then install it. Now navigate to the Mamp folder inside of the applications folder.
+          Do this by hitting <code>cd mamp/htdocs</code></p>  
+          <p>Let's create the location for the project. Type <code>mkdir frameworkStarter</code>
+          </p>
+          <h5>Git initializing and cloning:</h5>
+          <p>In that folder you just created type <code>git init</code> </p>
+          <p>Now we are cloning the the github repo!!! Type into the terminal</p>
+          <code>git clone https://github.com/mushel/materialize101.git</code>
+          <p>There's gonna be all the files from that repo that will appear in the directory</p>
+          <p>Start mamp double click on the icon or start it by hitting <b>command spacebar</b> then hit start servers. Now you can navigate to the page with the repo we just cloned.</p>
+          <p>Navigate to your localhost <b>localhost:8888/frameworkstarter</b>
+          <p>Here is the npm page that we are gonna snag off github</p>
+
+          <a href="https://www.npmjs.com/package/materialize-css" target="_blank">npmjs materialize</a>
+        </div>
 
       </div>
       <div class="row">
         
       </div>
-      <!--   Icon Section   -->
+      
       
 
     </div>
@@ -140,11 +159,11 @@ $thankYou="Your message has been sent.";
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-        <h2 class="header col s12 light">Does your team…</h2>      
+        <h2 class="header col s12 light">Install a CSS preposessor (Sass) with npm </h2>      
         </div>      
       </div>
     </div>
-    <div class="parallax"><img src="background2.jpg" alt="winery"></div>
+    <div class="parallax"><img class="grayscale" src="terminal.png" alt="terminal code"></div>
   </div>
   <div class="container">
     <div class="row">
@@ -154,7 +173,7 @@ $thankYou="Your message has been sent.";
         <p>Run the command</p>
         <code>npm init</code>
 
-        <p>You will be prompted to answer several questions about your project, after which npm will generate a package.json file in your folder. 
+        <p>You will be prompted to answer several questions about your project, after which npm will generate a <b>package.json</b> file in your folder. 
         <p>Then run this to install the npm for sass</p>
         <code>npm install node-sass</code>  
         <p>Pop that file open and insert this code to the "scripts section". * Add a comma at the end of the test line too.</p>
@@ -211,18 +230,18 @@ $thankYou="Your message has been sent.";
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h3>I hope this tutorial shed light on some basics.</h3>
+          <h3 class="header">I hope this tutorial shed light on some basics.</h3>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background3.jpg" alt="Winery 2"></div>
+    <div class="parallax"><img src="hacker.jpg" alt="you did it"></div>
   </div>
   <footer class="page-footer teal">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Valley Strategic Partners</h5>
-          <p class="grey-text text-lighten-4">Let us help you drive that success.</p>
+          <h5 class="white-text">m. currier designs</h5>
+          <p class="grey-text text-lighten-4">tutorials project.</p>
 
 
         </div>
@@ -236,11 +255,14 @@ $thankYou="Your message has been sent.";
           </ul>
         </div>
         <div class="col l3 s12">
+          <h5>Important Links</h5>
           <ul>
-            <li>Keith Crawford</li>
-            <li>1461 Main Street, #551</li>
-            <li>St. Helena, California 94574</li>
-            <li>504.717.3821</li>
+            <li><a href="http://github.com" target="_blank">github</a></li>
+            <li><a href="https://www.mamp.info/en/downloads/">MAMP</a></li>
+            <li><a href="https://webdesign.tutsplus.com/tutorials/watch-and-compile-sass-in-five-quick-steps--cms-28275" target="_blank">SASS Watch and Compile Tut</a></li>
+            <li><a href="https://code.visualstudio.com/download" target="_blank">VS Code</a></li>
+            <li></li>
+            <li></li>
           </ul>
         </div>
       </div>
